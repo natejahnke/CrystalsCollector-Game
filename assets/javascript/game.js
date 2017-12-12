@@ -9,11 +9,11 @@ var randomPurple;
 var randomWhite;
 
 function getRandomNumber() {
-    targetNumber = Math.floor(Math.random() * 46) + 15;
+    targetNumber = Math.floor(Math.random() * 101) + 19;
 }
 
 function genRandomGem() {
-    return Math.floor(Math.random() * 23) + 1;
+    return Math.floor(Math.random() * 11) + 1;
 }
 
 $(document).ready(function() {
