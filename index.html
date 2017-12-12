@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -10,7 +11,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Crystal Collector!</h1>
+        <div>
+            You will be given a random number at the start of the game.
+            <br>
+            <br> There are four crystal below. By clicking on a crystal you will add a specific amount of points to your total
+            score.
+            <br>
+            <br> You win the game by matching your total score to random number, you lose the game if your total score goes above
+            the random number.
+            <br>
+            <br>
+            <br> The value of each crystal is hidden from you until you click on it.
+            <br>
+            <br> Each time when the game starts, the game will change the values of each crystal.
+        </div>
+
+        <br>
+        <div>
+            Random Number:
+            <span id="randBox"></span>
+        </div>
+        <div>
+            Wins:
+            <span id="winBox"></span>
+        </div>
+        <div>
+            Losses:
+            <span id="lossBox"></span>
+        </div>
+        <div>
+            Your Total Score:
+            <span id="remainingGuess"></span>
+        </div>
+        <div>
+            <img src="assets/images/blue-gem.jpg" alt="">
+            <img src="assets/images/diamond.png" alt="">
+            <img src="assets/images/purple-gem.jpg" alt="">
+        </div>
+    </div>
 </body>
+
 </html>
