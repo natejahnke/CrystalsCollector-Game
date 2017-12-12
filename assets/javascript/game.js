@@ -16,7 +16,7 @@ function genRandomGem() {
     return Math.floor(Math.random() * 11) + 1;
 }
 
-$(document).ready(function() {
+function gameStart() {
     getRandomNumber();
     $("#targetBox").text(targetNumber);
     randomBlue = genRandomGem();
@@ -28,7 +28,10 @@ $(document).ready(function() {
     $("#greenGem").attr("data-crystalvalue", randomGreen);
     $("#purpleGem").attr("data-crystalvalue", randomPurple);
     $("#whiteGem").attr("data-crystalvalue", randomWhite);
+}
 
+$(document).ready(function() {
+    gameStart()
 });
 
 $(".gem").on("click", function() {
@@ -46,6 +49,7 @@ $(".gem").on("click", function() {
         $("#targetBox").text(targetNumber);
         totalNumber = 0;
         $("#totalScore").empty();
+        gameStart()
 
     } else if (totalNumber >= targetNumber) {
         alert("Lose!");
@@ -55,6 +59,7 @@ $(".gem").on("click", function() {
         $("#targetBox").text(targetNumber);
         totalNumber = 0;
         $("#totalScore").empty();
+        gameStart()
     }
 });
 
