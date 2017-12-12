@@ -4,12 +4,10 @@
 <head>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="assets/javascript/game.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystal Collector!</title>
 </head>
 
 <body>
@@ -18,11 +16,9 @@
         <div>
             You will be given a random number at the start of the game.
             <br>
-            <br> There are four crystal below. By clicking on a crystal you will add a specific amount of points to your total
-            score.
+            <br> There are four crystal below. By clicking on a crystal you will add a specific amount of points to your total score.
             <br>
-            <br> You win the game by matching your total score to random number, you lose the game if your total score goes above
-            the random number.
+            <br> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
             <br>
             <br>
             <br> The value of each crystal is hidden from you until you click on it.
@@ -32,8 +28,8 @@
 
         <br>
         <div>
-            Random Number:
-            <span id="randBox"></span>
+            Target Number:
+            <span id="targetBox"></span>
         </div>
         <div>
             Wins:
@@ -45,14 +41,18 @@
         </div>
         <div>
             Your Total Score:
-            <span id="remainingGuess"></span>
+            <span id="totalScore"></span>
         </div>
         <div>
-            <img src="assets/images/blue-gem.jpg" alt="">
-            <img src="assets/images/diamond.png" alt="">
-            <img src="assets/images/purple-gem.jpg" alt="">
+            <img id="blueGem" class="gem" src="assets/images/blue-crystal.jpg">
+            <img id="greenGem" class="gem" src="assets/images/green-crystal.jpg">
+            <img id="purpleGem" class="gem" src="assets/images/purple-crystal.jpg">
+            <img id="whiteGem" class="gem" src="assets/images/white-crystal.jpg">
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
